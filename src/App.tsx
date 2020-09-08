@@ -19,9 +19,9 @@ export const BEGIN_MESSAGE = "begin";
 export default function App() {
   return (
     <div className="App">
-      <a className="github-fork-ribbon" href="https://zippy.cool" data-ribbon="Our other app: Zippy!" title="Our other app: Zippy!">Our other app: Zippy!</a>
+      <a className="github-fork-ribbon" href="https://adhoc.cool" data-ribbon="Our other app: Zippy!" title="Our other app: Zippy!">Our other app: Zippy!</a>
       <div className="App-header">
-        <a href="/"><img src={logo} className="App-logo" alt="Zippy" style={{marginBottom: -20}} /></a>
+        <a href="/"><img src={logo} className="App-logo" alt="Adhoc" style={{marginBottom: -20}} /></a>
         <h1 style={{display: "none"}}>Adhoc: one-to-one, peer-to-peer, end-to-end encrypted video calling</h1>
         <h2 style={{fontSize: 22, bottom: "100%", paddingBottom: 100, fontStyle: "italic"}}>one-to-one, peer-to-peer, end-to-end encrypted video calling</h2>
         <Router>
