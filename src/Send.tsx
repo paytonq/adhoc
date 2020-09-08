@@ -1,4 +1,6 @@
 import React from 'react';
+import AppHeader from './AppHeader';
+import Footer from './Footer';
 
 declare var Peer: any;
 
@@ -23,7 +25,7 @@ class Send extends React.Component<{}, SendState> {
   }
 
   private generateConnectionLink() {
-    this.setState({connectionLink: window.location.href + this.peer.id});
+    this.setState({connectionLink: window.location.href + "id/" + this.peer.id});
   }
 
   private copyConnectionLink() {
@@ -56,6 +58,7 @@ class Send extends React.Component<{}, SendState> {
   public render() {
     return (
     <>
+      <AppHeader />
       {!this.state.connectionLink && <button type="button" className="bttn-float bttn-lg bttn-primary" onClick={() => this.generateConnectionLink()}>
         Generate connection link
       </button>}
@@ -68,6 +71,7 @@ class Send extends React.Component<{}, SendState> {
             <br />
           </>
         )}
+      {!this.state.mediaStream && <Footer />}
     </>
     );
   }

@@ -1,5 +1,7 @@
 import React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
+import AppHeader from './AppHeader';
+import Footer from './Footer';
 
 declare var Peer: any;
 
@@ -46,6 +48,7 @@ class Receive extends React.Component<ReceiveProps, ReceiveState> {
   public render() {
     return (
       <>
+        <AppHeader />
         {!this.state.mediaStream && <button type="button" className="bttn-float bttn-lg bttn-primary" onClick={() => this.connect()}>
           Connect
         </button>}
@@ -55,6 +58,7 @@ class Receive extends React.Component<ReceiveProps, ReceiveState> {
             <br />
           </>
         )}
+        {!this.state.mediaStream && <Footer />}
       </>
     );
   }
