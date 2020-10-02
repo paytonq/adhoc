@@ -19,7 +19,7 @@ export const BEGIN_MESSAGE = "begin";
 export default function App() {
   return (
     <div className="App">
-      <a className="github-fork-ribbon" href="https://zippy.cool" data-ribbon="Our other app: Zippy!" title="Our other app: Zippy!">Our other app: Zippy!</a>
+      <a className="github-fork-ribbon" href="https://zippy.cool" data-ribbon="My other app: Zippy!" title="Our other app: Zippy!">Our other app: Zippy!</a>
       <div className="App-header">
         <Router>
           <Switch>
