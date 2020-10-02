@@ -2,6 +2,7 @@
   "name": "adhoc",
   "version": "0.1.0",
   "private": true,
+  "description": "Instantly setup adhoc video calls in your browser.",
   "dependencies": {
     "@babel/runtime": "^7.11.2",
     "@types/file-saver": "^2.0.1",
